@@ -13,10 +13,10 @@
             </h1>
             <table>
                 <tr>
-                    <td>Email Address
+                    <td>Username
                     </td>
                     <td>
-                        <asp:TextBox ID="txt_email" runat="server" MaxLength="50"></asp:TextBox>
+                        <asp:TextBox ID="txt_username" runat="server" MaxLength="50"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
@@ -40,7 +40,7 @@
             </table>
             <p>
                 <br />
-                <asp:LinkButton ID="btn_create_account" runat="server" Class="btn">Create Account</asp:LinkButton>
+                <asp:LinkButton ID="btn_create_account" runat="server" OnClick="btn_create_account_Click" Class="btn">Create Account</asp:LinkButton>
             </p>
 
             <asp:Table ID="tbl_create_account" Visible="false" runat="server">
@@ -49,15 +49,15 @@
                 Employee ID
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="txt_first_name" runat="server" MaxLength="8"></asp:TextBox>
+                        <asp:TextBox ID="txt_employee_id" runat="server" MaxLength="8"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
                     <asp:TableCell>
-                Email Address
+               Desired Username
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="txt_new_email" runat="server" MaxLength="50"></asp:TextBox>
+                        <asp:TextBox ID="txt_new_username" runat="server" MaxLength="50"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
@@ -73,7 +73,7 @@
                 Confirm Password
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:TextBox ID="txt_confirm_new_password" runat="server" TextMode="Password" MaxLength="50"></asp:TextBox>
+                        <asp:TextBox ID="txt_confirm_password" runat="server" TextMode="Password" MaxLength="50"></asp:TextBox>
                     </asp:TableCell>
                 </asp:TableRow>
                 <asp:TableRow>
@@ -81,7 +81,7 @@
                         <asp:Button ID="btn_cancel" runat="server" Text="Cancel" Class="btn" />
                     </asp:TableCell>
                     <asp:TableCell>
-                        <asp:Button ID="btn_submit_account" runat="server" Text="Create Account" Class="btn" />
+                        <asp:Button ID="btn_submit_account" runat="server" Text="Create Account" OnClick="btn_submit_account_Click" Class="btn" />
                     </asp:TableCell>
                 </asp:TableRow>
             </asp:Table>

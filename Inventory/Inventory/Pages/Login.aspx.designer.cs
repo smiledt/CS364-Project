@@ -22,13 +22,13 @@ namespace Inventory.Pages {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// txt_email control.
+        /// txt_username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_email;
+        protected global::System.Web.UI.WebControls.TextBox txt_username;
         
         /// <summary>
         /// txt_password control.
@@ -76,22 +76,22 @@ namespace Inventory.Pages {
         protected global::System.Web.UI.WebControls.Table tbl_create_account;
         
         /// <summary>
-        /// txt_first_name control.
+        /// txt_employee_id control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_first_name;
+        protected global::System.Web.UI.WebControls.TextBox txt_employee_id;
         
         /// <summary>
-        /// txt_new_email control.
+        /// txt_new_username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_new_email;
+        protected global::System.Web.UI.WebControls.TextBox txt_new_username;
         
         /// <summary>
         /// txt_new_password control.
@@ -103,13 +103,13 @@ namespace Inventory.Pages {
         protected global::System.Web.UI.WebControls.TextBox txt_new_password;
         
         /// <summary>
-        /// txt_confirm_new_password control.
+        /// txt_confirm_password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_confirm_new_password;
+        protected global::System.Web.UI.WebControls.TextBox txt_confirm_password;
         
         /// <summary>
         /// btn_cancel control.
