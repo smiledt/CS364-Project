@@ -25,8 +25,14 @@ namespace Inventory.Pages
             lab_sign_up_message.Text = "";
 
             //Sends login info to database and checks for the email/password combination
-            String login_status = Database.DBFunctions.User_Login(txt_username.Text, txt_password.Text);
-            lab_login_message.Text = login_status;
+            if (Database.DBFunctions.User_Login(txt_username.Text, txt_password.Text))
+            {
+                lab_login_message.Text = "Login Successful.";
+                Response.Redirect("Search.aspx");
+            }
+            else
+                lab_login_message.Text = "Login failed.";
+
         }
 
 

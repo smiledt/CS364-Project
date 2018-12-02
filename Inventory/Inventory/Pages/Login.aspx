@@ -29,7 +29,7 @@
                 <tr>
                     <td />
                     <td>
-                        <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" />
+                        <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_login_Click" Class="btn" />
                     </td>
                 </tr>
                 <tr>

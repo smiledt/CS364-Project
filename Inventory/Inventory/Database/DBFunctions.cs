@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.SqlClient;
-
+using System.Data.Common;
+using System.Data;
 
 namespace Inventory.Database
 {
@@ -20,7 +21,7 @@ namespace Inventory.Database
          * 
          * Output: a local session boolean with the login status?
          */
-        public static String User_Login(String Username, String Passwd)
+        public static Boolean User_Login(String Username, String Passwd)
         {
            // return true;
 
@@ -36,34 +37,54 @@ namespace Inventory.Database
                     Connection = conn
                 };
 
-                conn.Open();
+                /*if (cmd.Connection.State == ConnectionState.Open)
+                {
+                    cmd.Connection.Close();
+                    Console.WriteLine("Connection closed!");
+
+                }
+                */
+                //conn.Open();
 
                 //Instantiate the reader
                 SqlDataReader reader = cmd.ExecuteReader();
 
+
                 while (reader.Read())
                 {
-                    string user = (string)reader["Username"];
-                    string pass = (string)reader["Pass"];
+                    //Instantiate local variables
+                    String tmp_username = reader["Username"].ToString();
+                    String tmp_passwd = reader["Pass"].ToString();
 
-                    Console.Write("{0,-25}", user);
-                    Console.Write("{0,-20}", pass);
+                    if(Username.Equals(tmp_username) && Passwd.Equals(tmp_passwd))
+                    {
+                        reader.Close();
+                        conn.Close();
+                        return true;
+                    }
+
+
+                    //System.Diagnostics.Debug.WriteLine(Convert.ToString(reader[0]));
+                    //System.Diagnostics.Debug.WriteLine("TEST!");
                 }
-
+                
                 //Close the reader
                 reader.Close();
 
-                //Close the database connection
-                conn.Close();
-
-                return "Success!";
+                return false;
 
             }
             catch (Exception e)
             {
-                return "There was an error! \n" + e.ToString();
+                return false;
             }
-            
+
+            //Close the connection
+            finally
+            {
+                conn.Close();
+            }
+
         }
 
         /* 
@@ -103,9 +124,7 @@ namespace Inventory.Database
 
                 cmd.ExecuteNonQuery();
 
-                //close connection
-                //conn.Close();
-
+                
                 return "User created successfully.";
 
             }
@@ -115,6 +134,57 @@ namespace Inventory.Database
                 String error = e.ToString();
                 return "Error: Unable to create account \n " + error;
             }
+
+            //Close the connection
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        public static String Submit_Item(String serial, String model, String note, String emp, String warehouse)
+        {
+            
+            //Open database connection
+            SqlConnection conn = Database.ConnectToDatabase.getConnection();
+
+            try
+            {
+                SqlCommand cmd = new SqlCommand
+                {
+                    CommandText = "INSERT INTO Item (Serial_Number, Model, Note, Employee_ID, Warehouse_ID) "
+                                        + "VALUES (@Serial_Number, @Model, @Note, @Employee_ID, @Warehouse_ID)",
+                    //cmd.CommandType = System.Data.CommandType.Text;
+                    Connection = conn
+                };
+                //conn.Open();
+
+                cmd.Parameters.AddWithValue("@Serial_Number", serial);
+                cmd.Parameters.AddWithValue("@Model", model);
+                cmd.Parameters.AddWithValue("@Note", note);
+                cmd.Parameters.AddWithValue("@Employee_ID", emp);
+                cmd.Parameters.AddWithValue("@Warehouse_ID", warehouse);
+
+                cmd.ExecuteNonQuery();
+
+                
+                return "Item add successfully.";
+                
+
+            }
+
+            catch (Exception e)
+            {
+                String error = e.ToString();
+                return "Error: Unable to add item \n " + error;
+            }
+            //Close the connection
+            finally
+            {
+                conn.Close();
+            }
+
+
         }
     }
 }

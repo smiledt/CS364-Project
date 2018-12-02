@@ -166,3 +166,16 @@ C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Invento
 C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.csproj.CopyComplete
 C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.dll
 C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.Helpers.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.Mvc.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.Razor.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.Deployment.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.Razor.dll
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.Helpers.xml
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.Mvc.xml
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.Razor.xml
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.xml
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.Deployment.xml
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.Razor.xml
