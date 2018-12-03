@@ -94,6 +94,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="Database\DBHelpers.cs" />
     <Compile Include="Database\DBFunctions.cs" />
     <Compile Include="Database\ConnectToDatabase.cs" />
     <Compile Include="Pages\Login.aspx.cs">

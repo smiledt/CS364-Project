@@ -10,7 +10,7 @@ namespace Inventory.Database
 {
     public class DBFunctions
     {
-
+        
         /*
          * Method to log the user into the Inventory system via the database.
          * 
@@ -144,7 +144,7 @@ namespace Inventory.Database
 
         public static String Submit_Item(String serial, String model, String note, String emp, String warehouse)
         {
-            
+                        
             //Open database connection
             SqlConnection conn = Database.ConnectToDatabase.getConnection();
 
@@ -162,8 +162,8 @@ namespace Inventory.Database
                 cmd.Parameters.AddWithValue("@Serial_Number", serial);
                 cmd.Parameters.AddWithValue("@Model", model);
                 cmd.Parameters.AddWithValue("@Note", note);
-                cmd.Parameters.AddWithValue("@Employee_ID", emp);
-                cmd.Parameters.AddWithValue("@Warehouse_ID", warehouse);
+                cmd.Parameters.AddWithNullableValue("@Employee_ID", emp);
+                cmd.Parameters.AddWithNullableValue("@Warehouse_ID", warehouse);
 
                 cmd.ExecuteNonQuery();
 
