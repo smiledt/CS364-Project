@@ -37,11 +37,7 @@
                         <asp:TextBox ID="txt_cube" runat="server" MaxLength="50"></asp:TextBox>
                     </td>
                     <td style="padding-left: 30px">Warehouse: 
-                        <asp:DropDownList ID="list_warehouse" runat="server">
-                            <asp:ListItem>None</asp:ListItem>
-                            <asp:ListItem>Onalaska</asp:ListItem>
-                            <asp:ListItem>Holmen</asp:ListItem>
-                            <asp:ListItem>Tomah</asp:ListItem>
+                        <asp:DropDownList ID="list_warehouse" runat="server" DataSourceID="SqlDataSource1" DataTextField="Warehouse_Name" DataValueField="Warehouse_Name">
                         </asp:DropDownList>
                     </td>
                 </tr>
@@ -81,11 +77,7 @@
                         <asp:TextBox ID="txt_new_emp" runat="server" MaxLength="255"></asp:TextBox>
                     </asp:TableCell>
                     <asp:TableCell>Warehouse:
-                        <asp:DropDownList ID="list_new_warehouse" runat="server">
-                            <asp:ListItem>None</asp:ListItem>
-                            <asp:ListItem>Onalaska</asp:ListItem>
-                            <asp:ListItem>Holmen</asp:ListItem>
-                            <asp:ListItem>Tomah</asp:ListItem>
+                        <asp:DropDownList ID="list_new_warehouse" runat="server" DataSourceID="SqlDataSource1" DataTextField="Warehouse_Name" DataValueField="Warehouse_Name">
                         </asp:DropDownList>
                     </asp:TableCell>
                 </asp:TableRow>
@@ -104,6 +96,10 @@
             <asp:Label ID="lab_add_item_message" runat="server" style="color: red"></asp:Label>
 
         </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs364ConnectionString %>" SelectCommand="SELECT Warehouse_Name
+FROM Warehouse
+ORDER BY Warehouse_Name ASC
+"></asp:SqlDataSource>
     </form>
 </body>
 </html>
