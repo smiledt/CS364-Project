@@ -102,7 +102,7 @@
                 <tr>
                     <td />
                     <td>
-                        <asp:Button ID="btn_login" runat="server" Text="Login" OnClick="btn_add_warehouse_Click" Class="btn" />
+                        <asp:Button ID="btn_submit_warehouse" runat="server" Text="Submit Warehouse" OnClick="btn_submit_warehouse_Click" Class="btn" />
                     </td>
                 </tr>
                 <tr>

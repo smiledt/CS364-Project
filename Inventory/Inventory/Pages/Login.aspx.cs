@@ -25,7 +25,7 @@ namespace Inventory.Pages
             lab_sign_up_message.Text = "";
 
             //Sends login info to database and checks for the email/password combination
-            if (Database.DBFunctions.User_Login(txt_username.Text, txt_password.Text))
+            if (Database.DBUsers.User_Login(txt_username.Text, txt_password.Text))
             {
                 lab_login_message.Text = "Login Successful.";
                 Response.Redirect("Search.aspx");
@@ -82,7 +82,7 @@ namespace Inventory.Pages
 
             //All Validation Steps complete. 
 
-            String create_status = Database.DBFunctions.Create_User(txt_employee_id.Text, txt_new_username.Text, txt_new_password.Text);
+            String create_status = Database.DBUsers.Create_User(txt_employee_id.Text, txt_new_username.Text, txt_new_password.Text);
             lab_sign_up_message.Text = create_status;
         }
     }

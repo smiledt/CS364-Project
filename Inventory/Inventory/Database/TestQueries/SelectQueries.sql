@@ -6,12 +6,15 @@ SELECT *
 SELECT *
 	FROM Item
 
-SELECT Address_ID
+
+SELECT *
 	FROM Addresses
-	WHERE Street_Address = '1234 Main St'
 
 SELECT *
 	FROM Warehouse
 
 SELECT * 
 	FROM Employee
+
+SELECT *
+	FROM Warehouse INNER JOIN Addresses ON Warehouse.Address_ID = Addresses.Address_ID

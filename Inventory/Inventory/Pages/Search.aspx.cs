@@ -104,7 +104,7 @@ namespace Inventory.Pages
             //Submit by warehouse if nothing is entered in the Employee field
             else if(txt_new_emp.Text.Length == 0)
             {
-                lab_add_item_message.Text = Database.DBFunctions.Submit_Item(
+                lab_add_item_message.Text = Database.DBItems.Submit_Item(
                     txt_new_serial.Text, list_new_model.Text, txt_new_note.Text, null, list_new_warehouse.Text);
                 return;
             }
@@ -112,7 +112,7 @@ namespace Inventory.Pages
             //Finally, submit by employee 
             else
             {
-                lab_add_item_message.Text = Database.DBFunctions.Submit_Item(
+                lab_add_item_message.Text = Database.DBItems.Submit_Item(
                     txt_new_serial.Text, list_new_model.Text, txt_new_note.Text, txt_new_emp.Text, null);
                 return;
             }

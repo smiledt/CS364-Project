@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Inventory.Pages.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Test Master</title>
+    <meta name="description" content="Plumbus labs is a (fictional) corporation run out of Derek Smiley's basement" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container" id="top_content">
+            <header class="main">
+                <nav>
+                    <ul>
+                        <li id="logo"> <a href="">Image here?</a></li>
+                        <li> <a href="">Item Search</a></li>
+                        <li> <a href="">Warehouses</a></li>
+                        <li> <a href="">Spaceholder 1</a></li>
+                        <li> <a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div id="main_content">
+            <asp:ContentPlaceHolder ID="Main_Content" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="footer_content">
+            <asp:ContentPlaceHolder ID="Footer_Bar" runat="server">
+                <!--Footer Bar goes here!!!-->
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

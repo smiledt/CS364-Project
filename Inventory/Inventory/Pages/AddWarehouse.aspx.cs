@@ -20,7 +20,7 @@ namespace Inventory.Pages
             lab_add_warehouse_message.Text = "";
         }
 
-        protected void btn_add_warehouse_Click(object sender, EventArgs e)
+        protected void btn_submit_warehouse_Click(object sender, EventArgs e)
         {
             Clear_Output();
             
@@ -54,8 +54,8 @@ namespace Inventory.Pages
             //Validation Complete
             //Insert new warehouse to the database
             //First: Insert the new address
-            int address_ID = Database.DBFunctions.Submit_Address(txt_street_address.Text, txt_warehouse_city.Text, list_state.SelectedValue, zip_int);
-            string add_warehouse_status = Database.DBFunctions.Submit_Warehouse(txt_warehouse_name.Text, address_ID);
+            int address_ID = Database.DBWarehouse.Submit_Address(txt_street_address.Text, txt_warehouse_city.Text, list_state.SelectedValue.ToString(), zip_int);
+            string add_warehouse_status = Database.DBWarehouse.Submit_Warehouse(txt_warehouse_name.Text, address_ID);
             lab_add_warehouse_message.Text = add_warehouse_status;
             return;
                 

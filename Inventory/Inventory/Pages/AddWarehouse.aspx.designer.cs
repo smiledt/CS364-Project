@@ -67,13 +67,13 @@ namespace Inventory.Pages {
         protected global::System.Web.UI.WebControls.TextBox txt_zip;
         
         /// <summary>
-        /// btn_login control.
+        /// btn_submit_warehouse control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_login;
+        protected global::System.Web.UI.WebControls.Button btn_submit_warehouse;
         
         /// <summary>
         /// lab_add_warehouse_message control.
