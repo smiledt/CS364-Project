@@ -1,0 +1,79 @@
+﻿header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+header nav ul li {
+    float: left;
+    height: 60px;
+    border-right: 1px solid #bbb;
+}
+
+#logo {
+    height: 60px;
+    margin: -20px -22px;
+}
+
+header nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 22px;
+    text-decoration: none;
+}
+
+header nav ul li:last-child{
+    float: right;
+    border-right: none;
+}
+
+.active {
+    background-color: rebeccapurple;
+    color: black;
+}
+
+header nav ul li a:hover:not(.active) {
+    background-color: #555;
+    color: lightblue;
+}
+
+
+body{
+    background-image: url("../../Images/background.jpg");
+
+    color: aliceblue;
+
+    -webkit-font-smoothing: antialiased;
+    text-rendering:optimizeLegibility;
+}
+  
+
+.container {
+    width: 924px;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
+
+#main_content {
+    width: 924px;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
+
+/* Footer code starts here */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 150px;
+}

@@ -96,10 +96,14 @@
     <None Include="Database\Queries\Submit_Item.sql" />
     <None Include="Database\Queries\Submit_User.sql" />
     <Content Include="Database\Queries\Submit_Warehouse.sql" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\backgroundtest.jpg" />
+    <Content Include="Images\logo.png" />
     <Content Include="Pages\AddWarehouse.aspx" />
     <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\CSS\Normalize.css" />
     <Content Include="Pages\Search.aspx" />
-    <Content Include="Pages\Style.css" />
+    <Content Include="Pages\CSS\Style.css" />
     <Content Include="Pages\test.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -162,9 +166,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Queries\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

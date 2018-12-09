@@ -4,23 +4,26 @@
 
 <html>
 <head runat="server">
-    <title>Test Master</title>
+    <title>Plumbus Labs</title>
     <meta name="description" content="Plumbus labs is a (fictional) corporation run out of Derek Smiley's basement" />
-    <asp:ContentPlaceHolder ID="head" runat="server">
-    </asp:ContentPlaceHolder>
-    <link href="Style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+   
+    <link href="CSS/Style.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/Normalize.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
     <form id="form1" runat="server">
-        <div class="container" id="top_content">
+        <div id="top_content">
             <header class="main">
                 <nav>
                     <ul>
-                        <li id="logo"> <a href="">Image here?</a></li>
-                        <li> <a href="">Item Search</a></li>
-                        <li> <a href="">Warehouses</a></li>
+                        <li> <a href="Login.aspx"><img src="../Images/logo.png" alt="Plumbus Labs logo" id="logo" /></a></li>
+                        <li> <a class="active" href="Search.aspx">Item Search</a></li>
+                        <li> <a href="AddWarehouse.aspx">Warehouses</a></li>
                         <li> <a href="">Spaceholder 1</a></li>
                         <li> <a href="">Contact Us</a></li>
+                        <li> <a href="Login.aspx">Login</a></li>
                     </ul>
                 </nav>
             </header>
@@ -32,11 +35,18 @@
             </asp:ContentPlaceHolder>
         </div>
 
-        <div id="footer_content">
-            <asp:ContentPlaceHolder ID="Footer_Bar" runat="server">
-                <!--Footer Bar goes here!!!-->
-            </asp:ContentPlaceHolder>
-        </div>
+        <!-- Footer starts here -->
+        <footer class="main">
+            <div class="container">
+                <div id="copyright">
+                    <p>copyright &copy; 2018 <strong>Derek Smiley</strong></p>
+                </div>
+              <div id="warning">
+                 <p>Unauthorized use of this resource is STRICTLY prohibitted.</p>
+                  <p>Violaters will be prosecuted to the full extent of the law.</p>
+                </div>
+            </div>
+        </footer>
     </form>
 </body>
 </html>

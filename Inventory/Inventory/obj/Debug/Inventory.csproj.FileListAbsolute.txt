@@ -194,3 +194,5 @@ C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Invento
 C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\bin\System.Web.WebPages.Razor.xml
 C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
 C:\Users\Derek\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\smiledt\OneDrive\Documents\Programming\C#\CS364-Project\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.cache

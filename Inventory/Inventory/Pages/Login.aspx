@@ -1,14 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Inventory.Pages.Login" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Login</title>
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div style="padding: 30px">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Pages/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Inventory.Pages.Login" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="Main_Content" runat="server">
+    <div style="padding: 30px">
             <h1>Sign in
             </h1>
             <table>
@@ -87,6 +81,4 @@
             </asp:Table>
             <asp:Label ID="lab_sign_up_message" runat="server" Style="color: red"></asp:Label>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>
